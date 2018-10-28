@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./js/JsBarcode.all.js"></script>
+    <LINK href="./style/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEWOO</title>
+</head>
+<body>
+    <div class="print-area">
+        <div class="print-head">***دفتر</div>
+        <img class="print-logo" src="./img/logo.png" alt="logo">
+        <div class="post-type">پیشتاز EMS</div>
+        <div class="left-part" id="smal">
+            <div>مبدا ◄ 
+                (<span>18735</span>)
+            </div>
+            <div>
+                <div>مقصد ◄ 
+                    (<span>18735</span>)
+                </div>
+                <div>وزن ◄ 
+                    <span>18735</span>گرم
+                </div>
+            </div>
+            <div id="bold">کرایه
+                <span>18735</span>ریال
+            </div>
+            <div>
+                <img class="barcode-part" id="barcode4"/>
+                <script>
+                    JsBarcode("#barcode4",
+                            '187359721600113500000111',
+                        {displayValue: false});
+                </script>
+                <div>187359721600113500000111</div>
+            </div>
+            
+        </div>
+        <!--div class="city-name">
+            <div id="bold">تهران</div>
+            <div id="bold">تهران</div>
+        </div>
+        <div class="postal-code">
+            <div>کد پستی 1587975813</div>
+            <div>تلفن:</div>
+        </div>
+        <div class="title-part">گیرنده: اداره کل پست منطقه 15</div>
+        <div class="adress-part">نشانی گیرنده: شهید قندی - نیلوفر - خیابان دکتر علی شریعتی - خیابان هویزه - پلاک 1 - طبقه همکف</div-->
+    </div>
+</body>
+</html>

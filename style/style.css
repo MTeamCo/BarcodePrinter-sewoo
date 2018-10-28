@@ -34,11 +34,17 @@
     font-size:15px;
 }
 
+#smal, #smal *{
+    padding:0;
+    font-size:10px;
+}
+
 body{
     padding:0;
     margin:0;
 }
 .print-area{
+    position:relative;
     padding:0;
     margin-left:55px;
     width:280px;
@@ -78,3 +84,34 @@ body{
     }
 
     
+
+
+
+.print-head{
+    width:100%;
+    text-align: center;
+}
+
+.print-logo{
+    position: absolute;
+    top:5px;
+    right:5px;
+    width: 40px;
+}
+
+.post-type{
+    position: absolute;
+    top:40px;
+    right:5px;
+}
+
+.left-part{
+    position: absolute;
+    width:calc(100% - 70px);
+    left:0;
+}
+
+    .barcode-part{
+        width:100%;
+        height:40px;
+    }
