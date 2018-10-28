@@ -36,7 +36,12 @@
 
 #smal, #smal *{
     padding:0;
-    font-size:10px;
+    font-size:11px;
+}
+
+#normal{
+    font-family: "nazanin-font";
+    font-size:14px;
 }
 
 body{
@@ -95,23 +100,61 @@ body{
 .print-logo{
     position: absolute;
     top:5px;
-    right:5px;
+    right:15px;
     width: 40px;
 }
 
 .post-type{
     position: absolute;
     top:40px;
-    right:5px;
+    right:0px;
+    width:77px;
+    text-align: center;
 }
 
 .left-part{
     position: absolute;
-    width:calc(100% - 70px);
+    width:calc(100% - 80px);
     left:0;
+    margin-left:5px;
+    margin-top:-2px;
 }
+
+    .my-border{
+        border:1px dashed black;
+        margin:2px;
+    }
+    .my-border span{
+        margin:2px;
+    }
+
+    .important-values{
+        display:inline-block;
+        text-align: center;
+    }
+
+    .two-part{
+        display:flex;
+        justify-content: center;
+    }
+
+    .two-part div{
+        width:50%;
+    }
 
     .barcode-part{
         width:100%;
-        height:40px;
+        height:30px;
+    }
+
+    .barcode-text{
+        padding-top:0;
+        margin-top:-10px;
+        text-align: center;
+    }
+
+    #qrcode{
+        position: absolute;
+        right:8px;
+        top:77px;
     }

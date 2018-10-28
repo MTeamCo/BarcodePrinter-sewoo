@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="./js/JsBarcode.all.js"></script>
+    <script type="text/javascript" src="./js/JsBarcode.all.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/qrcode.js"></script>
     <LINK href="./style/style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,19 +16,27 @@
         <img class="print-logo" src="./img/logo.png" alt="logo">
         <div class="post-type">پیشتاز EMS</div>
         <div class="left-part" id="smal">
-            <div>مبدا ◄ 
-                (<span>18735</span>)
+            <div class="full-part my-border">
+                <span>مبدا ◄ 
+                    (<span class="important-values" style="width:150px">18735</span>)
+                </span>
             </div>
-            <div>
-                <div>مقصد ◄ 
-                    (<span>18735</span>)
+            <div class="two-part">
+                <div class="my-border">
+                    <span>مقصد ◄ 
+                        (<span class="important-values" style="width:45px">18735</span>)
+                    </span>
                 </div>
-                <div>وزن ◄ 
-                    <span>18735</span>گرم
+                <div class="my-border">
+                    <span>وزن ◄ 
+                        <span class="important-values" style="width:40px">18735</span>گرم
+                    </span>
                 </div>
             </div>
-            <div id="bold">کرایه
-                <span>18735</span>ریال
+            <div id="bold" class="my-border">
+                <span>کرایه
+                    <span class="important-values" style="width:150px">18735</span>ریال
+                </span>
             </div>
             <div>
                 <img class="barcode-part" id="barcode4"/>
@@ -35,20 +45,17 @@
                             '187359721600113500000111',
                         {displayValue: false});
                 </script>
-                <div>187359721600113500000111</div>
+                <div id="normal" class="barcode-text">187359721600113500000111</div>
             </div>
-            
         </div>
-        <!--div class="city-name">
-            <div id="bold">تهران</div>
-            <div id="bold">تهران</div>
-        </div>
-        <div class="postal-code">
-            <div>کد پستی 1587975813</div>
-            <div>تلفن:</div>
-        </div>
-        <div class="title-part">گیرنده: اداره کل پست منطقه 15</div>
-        <div class="adress-part">نشانی گیرنده: شهید قندی - نیلوفر - خیابان دکتر علی شریعتی - خیابان هویزه - پلاک 1 - طبقه همکف</div-->
-    </div>
+        <div id="qrcode"></div>
+
+        <script type="text/javascript">
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                width : 60,
+                height : 60
+            });
+            qrcode.makeCode("www.gogole.com");
+        </script>
 </body>
 </html>
