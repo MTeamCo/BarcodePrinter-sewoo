@@ -1,0 +1,80 @@
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+}
+
+@font-face
+{
+    font-family: "yekan-font";
+    src:url(../font/BYekan_1.ttf);
+}
+
+@font-face
+{
+    font-family: "nazanin-font";
+    src:url(../font/BNazanin.ttf);
+}
+
+@font-face
+{
+    font-family: "nazanin-bold-font";
+    src:url(../font/BNaznnBd.ttf);
+}
+
+*{
+    font-family: "nazanin-font";
+    font-size:14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#bold{
+    font-family: "nazanin-bold-font";
+    font-weight: bold ; 
+    font-size:15px;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+.print-area{
+    padding:0;
+    margin-left:55px;
+    width:280px;
+    height:148px;
+    border:1px solid black;
+    border-radius: 5px;
+    overflow:hidden;
+    direction:rtl;
+}
+
+.city-name , .postal-code{
+    display:flex;
+    justify-content:center;
+    border-bottom:1px solid black;
+}
+
+.title-part{
+    width:100%;
+    border-bottom:1px solid black;
+    padding-right:5px;
+}
+
+.adress-part{
+    width:calc(100% - 10px);
+    padding-right:5px;
+}
+
+    .postal-code div, .city-name div
+    {
+        width:50%;
+        padding-right:5px;
+    }
+
+    .postal-code div:first-child, .city-name div:first-child
+    {
+        border-left:1px solid black;
+    }
+
+    
