@@ -23,7 +23,7 @@
 
 *{
     font-family: "nazanin-font";
-    font-size:14px;
+    font-size:12px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -36,12 +36,12 @@
 
 #smal, #smal *{
     padding:0;
-    font-size:11px;
+    font-size:10px;
 }
 
 #normal{
     font-family: "nazanin-font";
-    font-size:14px;
+    font-size:12px;
 }
 
 body{
@@ -144,7 +144,7 @@ body{
 
     .barcode-part{
         width:100%;
-        height:30px;
+        height:23px;
     }
 
     .barcode-text{
