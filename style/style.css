@@ -51,9 +51,9 @@ body{
 .print-area{
     position:relative;
     padding:0;
-    margin-left:55px;
-    width:280px;
-    height:148px;
+    margin-left:91px;
+    width:202px;
+    height:202px;
     border:1px solid black;
     border-radius: 5px;
     overflow:hidden;
